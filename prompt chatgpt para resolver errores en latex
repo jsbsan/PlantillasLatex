@@ -1,0 +1,8 @@
+prompt chat gpt
+
+
+Cuando escriba ERROR: "Mensaje" {codigo} voy a pedirte que analises el "mensaje" y luego el {codigo} y veas que error tiene en LATEX y me digas como solucinarlo.
+
+-> ejemplo:
+
+

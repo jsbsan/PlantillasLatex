@@ -1,0 +1,109 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\usepackage{amsmath}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage[a4paper]{geometry}
+\geometry{left=2cm,right=2cm,top=2cm,bottom=3cm}
+
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{graphicx}
+
+\usepackage{fontspec}
+
+\setmainfont{Arial}
+
+\usepackage{lipsum}
+
+\usepackage{wrapfig}
+\usepackage{overpic}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\setlength{\headheight}{48pt}
+
+\lhead{
+\includegraphics[height=1.5cm]{logo_chg.jpeg}
+}
+\rhead{adios
+
+hola
+
+casilla}
+
+\rfoot{holita}
+\lfoot{documento LaTeX}
+\cfoot{página \thepage\
+ de
+ \pageref{LastPage}
+ }
+
+
+\renewcommand{\thesection}{\arabic{section}}
+
+\begin{document}
+
+%portada de fondo
+\begin{titlepage}
+
+
+\begin{figure}[h]
+
+
+	\begin{overpic}[width=1.2\linewidth,tics=5,grid]{FondoPortada.pdf}
+	\put(40,81){\bfseries\LARGE SE(DT)-2034 \par}
+
+	\put(6,71){\bfseries\LARGE PROYECTO CONSTRUCTIVO \par}
+
+	\put(45,71){\bfseries\LARGE 01/23 \par}
+	
+	
+	\end{overpic}
+
+\end{figure}
+
+%\vspace{1cm}
+%{\bfseries\LARGE Universidad Superior T\'ecnica \par}
+%\vspace{1cm}
+%{\scshape\Large Facultad de Ingenier\'ia Industrial \par}
+%\vspace{3cm}
+%{\scshape\Huge T\'itulo del proyecto \par}
+%\vspace{3cm}
+%{\itshape\Large Proyecto Fin de Carrera \par}
+%\vfill
+%{\Large Autor: \par}
+%{\Large Nombre Apellidos \par}
+%\vfill
+%{\Large Junio 2020 \par}
+%\end{center}
+\end{titlepage}
+ 
+% Índice
+\tableofcontents
+\clearpage
+
+
+
+% Contenido
+ \thispagestyle{fancy}
+
+ 
+\section{Introducción}
+\lipsum[1-2]
+\clearpage
+\section{Desarrollo}
+\lipsum[3-4]
+\clearpage
+\section{Conclusión}
+\lipsum[5-6]
+
+   
+   
+\end{document}
